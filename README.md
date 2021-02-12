@@ -22,11 +22,11 @@ Please suffix x64 assembly with `.asm64`.
 
 ### Run shellcode for 32 bitc
 
-   ./bin/shellcoderun (echo -n -e (make raw | grep -v printf | grep -w 'shell' | awk '{print $2}' -))
+    ./bin/shellcoderun (echo -n -e (make raw | grep -v printf | grep -w 'shell' | awk '{print $2}' -))
 
 ## Run shellcode for 64 bitc
 
-   ./bin/shellcoderun64 (echo -n -e (make raw | grep -v printf | grep -w 'shell64' | awk '{print $2}' -))
+    ./bin/shellcoderun64 (echo -n -e (make raw | grep -v printf | grep -w 'shell64' | awk '{print $2}' -))
 
 # Get shellcodes
 
