@@ -48,5 +48,3 @@ $(CPROGS) : $(CSRC)
 raw:
 	$(foreach src, $(ASMPROGS),: && printf $(src) && printf '\t\\x' && objdump -d bin/$(src) | grep "^ " | cut -f2 | tr -d ' ' | tr -d '\n' | sed 's/.\{2\}/&\\x /g'| head -c-3 | tr -d ' ' && echo ' ' && printf '\n')
 	$(foreach src, $(ASMPROGS64),: && printf $(src) && printf '\t\\x' && objdump -d bin/$(src) | grep "^ " | cut -f2 | tr -d ' ' | tr -d '\n' | sed 's/.\{2\}/&\\x /g'| head -c-3 | tr -d ' ' && echo ' ' && printf '\n')
-# @printf '\\x' && objdump -d bin/$< | grep "^ " | cut -f2 | tr -d ' ' | tr -d '\n' | sed 's/.\{2\}/&\\x /g'| head -c-3 | tr -d ' ' && echo ' '
-
