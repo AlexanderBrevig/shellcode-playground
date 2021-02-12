@@ -3,6 +3,8 @@
 This repository is set up to build all `.c`, `.asm` and `.asm64` in the root of this directory.
 The intention is to make it easy to experiment writing shellcode.
 
+The `.c` source will be compiled to `filename` for 32 bit and  `filename64` for - you guessed it - 64 bot!
+
 In this repository you will find working shellcodes for x86 and x86_64. These were found on the internet and I had a hard time tracking down the original source.
 They are both a very literal "This needs to be this way" in a simple and straight forward manner.
 
@@ -10,7 +12,16 @@ I added my own comments.
 
 ## Get started
 
-    sudo pacman -S nasm:
+Be on a linux machine.
+
+Install dependencies:
+
+* nasm
+* gcc
+* ld
+* make
+
+Alternatively edit Makefile to suit your needs.
 
 ## Add or edit files
 
