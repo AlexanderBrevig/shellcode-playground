@@ -1,6 +1,6 @@
 CC=gcc
-CFLAGS=-Wall -m32
-CFLAGS64=-Wall -m64 -fno-stack-protector -z execstack
+CFLAGS=-m32 -w
+CFLAGS64=-m64 -fno-stack-protector -z execstack -w
 
 AS=nasm #Assembly compiler
 ASFLAGS=-f elf -g #Assembly flags
