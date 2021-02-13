@@ -1,3 +1,5 @@
+![shellcode-playground demo](images/demo.gif)
+
 # General
 
 This repository is set up to build all `.c`, `.asm` and `.asm64` in the root of this directory.
